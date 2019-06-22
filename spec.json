@@ -1,0 +1,48 @@
+{
+    "name": "DOCKER_REPO",
+    "desc": "DOCKER_REPO",
+    "icon_uri": "DOCKER_REPO",
+    "src_uri": "https://hub.docker.com/r/kinetica/kinetica-blackbox-sdk",
+    "functions": [
+        {
+            "name": "name",
+            "desc": "desc",
+            "bb_module": "bb_module_default",
+            "bb_function": "blackbox_function_default",
+            "inputs": [],
+            "outputs": [],
+            "multiout": false,
+            "env_vars": []
+        },
+        {
+            "name": "name",
+            "desc": "desc",
+            "bb_module": "bb_module_default",
+            "bb_function": "blackbox_function_math",
+            "inputs": ["figure1", "figure2", "mylabel"],
+            "outputs": ["sum", "product", "max", "suminwords"],
+            "multiout": false,
+            "env_vars": []
+        },
+        {
+            "name": "name",
+            "desc": "desc",
+            "bb_module": "bb_module_default",
+            "bb_function": "blackbox_function_math_multiout",
+            "inputs": ["figure1", "figure2", "mylabel"],
+            "outputs": ["operation", "result"],
+            "multiout": true,
+            "env_vars": []
+        },
+        {
+            "name": "name",
+            "desc": "desc",
+            "bb_module": "bb_module_default",
+            "bb_function": "blackbox_function_advanced_math",
+            "inputs": ["figure1", "figure2", "mylabel"],
+            "outputs": ["division", "modulo", "min", "productinwords"],
+            "multiout": false,
+            "env_vars": []
+        }
+    ]
+}
